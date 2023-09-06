@@ -1,28 +1,20 @@
-const IntroAnimation = () => {
-   let nameIndex = 0;
-   let typeRonak;
+import { useEffect } from "react";
+import "./introAnimation.css";
 
-   const returnCharacter = () => {
-      if (nameIndex === 10) {
-         clearInterval(typeRonak);
-      }
-      const name = "RonakMalkan";
-      nameIndex++;
-      console.log(name[nameIndex - 1]);
-      return name[nameIndex - 1];
-   };
-
-   const setINTERVAL = () => {
-      typeRonak = setInterval(returnCharacter, 100);
-      return typeRonak;
-   };
+const IntroAnimation = ({ setAnimationOver }) => {
+   useEffect(() => {
+      const waitForAnimation = setTimeout(() => {
+         clearTimeout(waitForAnimation);
+         setAnimationOver(true);
+      }, 4000);
+   }, []);
 
    return (
-      <div>
+      <div className="animationContainer">
          <h1 className="codeRonakMalkan">
-            {"<"}
-            <span>{setINTERVAL()}</span>
-            {"/>"}
+            <div className="nameHolder">
+               {"<"}Ronak_Malkan{"/>"}
+            </div>
          </h1>
       </div>
    );

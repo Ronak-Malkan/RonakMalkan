@@ -1,0 +1,47 @@
+.animationContainer {
+   display: table;
+   width: 100%;
+   height: 95vh;
+}
+
+.animationContainer .codeRonakMalkan {
+   display: table-cell;
+   vertical-align: middle;
+}
+
+.codeRonakMalkan {
+   text-align: center;
+   font-size: 70px;
+}
+
+.nameHolder {
+   display: inline-block;
+   padding: 0;
+   margin: 0 5px;
+   font-family: "Share Tech Mono", monospace;
+   width: 15ch;
+   white-space: nowrap;
+   overflow: hidden;
+
+   border-right: 3px solid white;
+
+   animation: type 2s steps(15), blink 0.5s step-end infinite alternate;
+}
+
+@keyframes type {
+   from {
+      width: 0;
+   }
+}
+
+@keyframes blink {
+   50% {
+      border-color: transparent;
+   }
+}
+
+@media (max-width: 400px) {
+   .codeRonakMalkan {
+      font-size: 40px;
+   }
+}

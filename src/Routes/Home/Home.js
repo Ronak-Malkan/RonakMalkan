@@ -4,7 +4,15 @@ import MainPage from "../../components/MainPage/MainPage";
 
 const Home = () => {
    const [animationOver, setAnimationOver] = useState(false);
-   return <div>{animationOver ? <MainPage /> : <IntroAnimation />}</div>;
+   return (
+      <div>
+         {animationOver ? (
+            <MainPage />
+         ) : (
+            <IntroAnimation setAnimationOver={setAnimationOver} />
+         )}
+      </div>
+   );
 };
 
 export default Home;
