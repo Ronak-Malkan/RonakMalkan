@@ -7,7 +7,7 @@ const IntroAnimation = ({ setAnimationOver }) => {
          clearTimeout(waitForAnimation);
          setAnimationOver(true);
       }, 4000);
-   }, []);
+   });
 
    return (
       <div className="animationContainer">
