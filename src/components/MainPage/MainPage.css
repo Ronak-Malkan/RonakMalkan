@@ -35,6 +35,16 @@
    color: #58cd56;
 }
 
+@media (max-width: 1300px) {
+   #projectsContainer {
+      width: 60%;
+   }
+
+   .sectionInformation {
+      width: 60%;
+   }
+}
+
 @media (max-width: 1100px) {
    #projectsContainer {
       width: 70%;
