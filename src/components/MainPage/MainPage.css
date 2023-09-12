@@ -35,9 +35,39 @@
    color: #58cd56;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1100px) {
    #projectsContainer {
-      width: 80%;
+      width: 70%;
+   }
+
+   .sectionInformation {
+      width: 70%;
+   }
+}
+
+@media (max-width: 925px) {
+   #projectsContainer {
+      width: 85%;
+   }
+
+   .sectionInformation {
+      width: 85%;
+   }
+}
+
+@media (max-width: 760px) {
+   #projectsContainer {
+      width: 92%;
+   }
+
+   .sectionInformation {
+      width: 85%;
+   }
+}
+
+@media (max-width: 450px) {
+   #projectsContainer {
+      width: 310px;
    }
 
    .sectionInformation {
@@ -48,5 +78,23 @@
    #InfoSection {
       font-size: 16px;
       margin-bottom: 90px;
+   }
+}
+
+@media (max-width: 350px) {
+   #projectsContainer {
+      width: 260px;
+   }
+
+   .title {
+      font-size: 26px;
+   }
+
+   .sectionInformation {
+      font-size: 18px;
+   }
+
+   #InfoSection {
+      font-size: 14px;
    }
 }
